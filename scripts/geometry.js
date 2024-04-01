@@ -103,7 +103,6 @@ function removeAllElement(parent) {
 
 document.getElementById('btn-clear').addEventListener('click', function () {
     const container = document.querySelector('#result-container');
-    console.log(container);
     removeAllElement(container);
 })
 
