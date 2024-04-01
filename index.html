@@ -138,9 +138,12 @@
                 </div>
             </section>
             <!-- Area Section -->
-            <section id="calcArea"class="border rounded-lg border-blue-500 h-96 w-full md:w-3/12 lg:w-3/12 p-5">
-                <h1 class="text-center p-5">Area</h1>
-                <button id="btn-area"class="btn btn-info text-white relative top-44 left-20">Clear Area</button>
+            <section id="calcArea"class="cal-area flex flex-col justify-between border rounded-lg  h-96 w-full md:w-3/12 lg:w-3/12 p-5 shadow-lg">
+                <h1 class="text-center text-2xl font-bold text-orange-500">Area</h1>
+                <div id="result-container"class="flex-1">
+                    
+                </div>
+                <button id="btn-clear" class="btn btn-info">Clear All</button>
             </section>
         </div>
     </main>
@@ -148,7 +151,6 @@
 
     </footer>
     <script src="scripts/geometry.js"></script>
-    <script src="scripts/clearArea.js"></script>
 </body>
 
 </html>
