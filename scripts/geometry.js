@@ -96,13 +96,13 @@ document.getElementById('btn-ellipse').addEventListener('click', function () {
 })
 // Clear Result for Calculation Area:
 function removeAllElement(parent) {
-    while (parent.firstChild) {
-        parent.removeChild(parent.firstChild);
+    while (parent.firstElementChild) {
+        parent.removeChild(parent.firstElementChild);
     }
 }
 
 document.getElementById('btn-clear').addEventListener('click', function () {
-    const container = document.querySelector('#result-container');
+    const container = document.getElementById('result-container');
     removeAllElement(container);
 })
 
